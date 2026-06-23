@@ -1,0 +1,80 @@
+{
+  // Font
+  "buffer_font_family": "ComicCodeLigatures Nerd Font",
+  "buffer_font_fallbacks": ["Lucida Console", "Consolas"],
+  "buffer_font_size": 14.0,
+  "buffer_font_weight": 500.0,
+  "buffer_line_height": {
+    "custom": 1.5
+  },
+  "terminal": {
+    "font_size": 14.0
+  },
+  "ui_font_family": "SF Pro",
+  "ui_font_size": 14.0,
+  "ui_font_weight": 600.0,
+  "text_rendering_mode": "platform_default",
+
+  // Theme
+  "theme": {
+    "mode": "dark",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha"
+  },
+  "icon_theme": "Catppuccin Mocha",
+
+  // Components
+  "cursor_blink": false,
+  "soft_wrap": "editor_width",
+  "wrap_guides": [80, 120],
+  "minimap": {
+    "show": "always",
+    "thumb": "hover",
+    "thumb_border": "left_open",
+    "current_line_highlight": "line"
+  },
+  "outline_panel": {
+    "dock": "right"
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false,
+    "selections_menu": false,
+    "agent_review": false,
+    "code_actions": false
+  },
+
+  // Behaviour
+  "autosave": "on_focus_change",
+  "auto_update": false,
+  "base_keymap": "VSCode",
+  "vim_mode": false,
+
+  // Connections
+  "ssh_connections": [
+    {
+      "host": "channel",
+      "args": [],
+      "projects": []
+    }
+  ],
+
+  // AI
+  "agent_servers": {
+    "claude": {
+      "default_model": "sonnet",
+      "favorite_models": [],
+      "default_config_options": {},
+      "favorite_config_option_values": {}
+    }
+  },
+  "disable_ai": false,
+  "show_completions_on_input": false,
+  "show_edit_predictions": false,
+
+  // Privacy
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "autoupdate:channel": "latest",
+  "autoupdate:enabled": false,
+  "conn:askbeforewshinstall": false,
+  "telemetry:enabled": true,
+  "term:fontsize": 14,
+  "term:fontfamily": "ComicCodeLigatures Nerd Font"
+}

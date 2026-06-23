@@ -1,0 +1,10 @@
+[Unit]
+Description=SSH key agent
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/ssh-agent -D -a /run/user/%U/ssh-agent.socket
+Restart=always
+
+[Install]
+WantedBy=default.target

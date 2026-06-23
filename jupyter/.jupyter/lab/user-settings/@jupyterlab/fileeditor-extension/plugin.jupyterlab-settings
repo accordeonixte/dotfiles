@@ -1,0 +1,11 @@
+{
+    "editorConfig": {
+        "customStyles": {
+            "fontFamily": "ComicCodeLigatures Nerd Font",
+            "fontSize": null,
+            "lineHeight": null
+        }
+    },
+    "scrollPastEnd": true,
+    "toolbar": []
+}

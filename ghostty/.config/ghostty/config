@@ -1,0 +1,27 @@
+# /Users/xhou/Library/Application Support/com.mitchellh.ghostty/config
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# Window
+window-height = 35
+window-width = 95
+
+# Font
+font-family = ComicCodeLigatures Nerd Font
+font-size = 13
+font-thicken = true
+adjust-cell-height = 12%
+
+# Theme
+theme = catppuccin-mocha
+cursor-style-blink = false
+cursor-style = block
+shell-integration-features = no-cursor
+
+# Padding
+window-padding-x = 2
+window-padding-y = 2
