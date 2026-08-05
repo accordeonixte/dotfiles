@@ -102,4 +102,4 @@ show_changelog_after_update = false
 [warpify]
 
 [warpify.ssh]
-ssh_extension_install_mode = "never_install"
+ssh_extension_install_mode = "always_ask"
