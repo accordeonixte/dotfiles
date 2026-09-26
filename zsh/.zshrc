@@ -130,3 +130,6 @@ precmd () { echo -n "\x1b]1337;CurrentDir=$(pwd)\x07" }
 if command -v thefuck >/dev/null 2>&1; then
     eval $(thefuck --alias)
 fi
+
+# Locale
+export LC_CTYPE=en_GB.UTF-8
