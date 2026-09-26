@@ -2,6 +2,7 @@
 cloud_conversation_storage_enabled = true
 
 [agents.warp_agent]
+is_any_ai_enabled = false
 
 [agents.warp_agent.input]
 nld_in_terminal_enabled = true
@@ -11,6 +12,45 @@ should_render_use_agent_toolbar_for_user_commands = false
 
 [agents.profiles]
 agent_mode_coding_permissions = "always_allow_reading"
+
+[agents.execution_profiles]
+
+[agents.execution_profiles.default]
+apply_code_diffs = "agent_decides"
+ask_user_question = "always_ask"
+autosync_plans_to_warp_drive = true
+command_allowlist = []
+command_denylist = [
+  'bash(\s.*)?',
+  'fish(\s.*)?',
+  'pwsh(\s.*)?',
+  'sh(\s.*)?',
+  'zsh(\s.*)?',
+  'curl(\s.*)?',
+  'eval(\s.*)?',
+  'exec(\s.*)?',
+  'source(\s.*)?',
+  'wget(\s.*)?',
+  'dig(\s.*)?',
+  'nslookup(\s.*)?',
+  'host(\s.*)?',
+  'ssh(\s.*)?',
+  'scp(\s.*)?',
+  'rsync(\s.*)?',
+  'telnet(\s.*)?',
+  'rm(\s.*)?',
+]
+computer_use = "never"
+directory_allowlist = []
+execute_commands = "always_ask"
+mcp_allowlist = []
+mcp_denylist = []
+mcp_permissions = "agent_decides"
+name = "Default"
+read_files = "agent_decides"
+run_agents = "always_ask"
+web_search_enabled = true
+write_to_pty = "always_ask"
 
 [privacy]
 custom_secret_regex_list = [
@@ -65,6 +105,7 @@ theme = { custom = { name = "Catppuccin Mocha", path = "/Users/xhou/.warp/themes
 
 [appearance.vertical_tabs]
 enabled = true
+hide_title_bar_search_bar = true
 
 [appearance.cursor]
 cursor_blink = "disabled"
@@ -79,6 +120,11 @@ left_panel_visibility_across_tabs = true
 open_windows_at_custom_size = true
 new_windows_num_rows = 35
 new_windows_num_columns = 95
+
+[appearance.tabs]
+workspace_decoration_visibility = "hide_fullscreen"
+show_indicators_button = true
+tab_close_button_position = "left"
 
 [notifications]
 toast_duration_secs = 8
@@ -103,3 +149,6 @@ show_changelog_after_update = false
 
 [warpify.ssh]
 ssh_extension_install_mode = "always_ask"
+
+[terminal]
+osc52_clipboard_access = "write_only"
